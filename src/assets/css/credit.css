@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body{
-    width: 770px;
-    height: 450px;;
     color: #fff;
 }
-.container{
-    width: 770px;
-    height: 450px;
-    background: #233e44;
-    margin-left: 200px;
-    margin-right: -20px;
+.warp{
+    width: 800px;
+    height: 498px;
 }
 .pm{
-    padding: 20px 0 0 0;
+    padding: 0px 0 0 0;
 }
 .devList{
     margin: auto;
@@ -24,7 +19,6 @@ body{
     background: #359e76;
 }
 #warperList{
-    height: 300px;;
 }
 #list-packaging-list{
     height: 63px;

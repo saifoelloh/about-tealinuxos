@@ -6,12 +6,15 @@ import {Link} from 'react-router-dom'
 export default class Credit extends Component {
     render() {
         return (
-            <div>
-<div className="container">
-        <div className="pm text-center">
-            <h3>Developer TeaLinuxOS</h3>
-            <h4>Project Manager</h4>
-            <h5><a href="">Saipul</a></h5>
+<div style={{height:'100vh'}}>
+    <div style={{background:'#233e44'}} className="w-100 h-100">
+        <div className="pm">
+     <Link className="btn text-left btn-primary" id="button" to="/">Home</Link>
+            <span className="text-center text-white">
+            <h4>Developer TeaLinuxOS</h4>
+            <h5>Project Manager</h5>
+            <h6><a href="">Saipul</a></h6>
+            </span>
         </div>
         <div className="devList justify-content-center">
             <div className="row ">
@@ -69,9 +72,8 @@ export default class Credit extends Component {
                 </div>
               </div>
         </div>
-        <Link type="button" id="button" to="/home">Home</Link>
     </div>
-            </div>
+ </div>
         )
     }
 }

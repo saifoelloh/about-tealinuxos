@@ -10,8 +10,9 @@ let mainWindow;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-      width: 770,
-      height: 450,
+      width: 800,
+      height: 498,
+      resizable:false,
       title: 'About TeaLinuxOS'
     });
   mainWindow.webContents.devToolsWebContents=true;

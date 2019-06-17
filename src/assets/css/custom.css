@@ -1,7 +1,7 @@
 
 body{
     background: #fff;
-    color: #fff;
+    color: white;
     font-size: 90%;
     margin: 0px;
 }
@@ -12,8 +12,6 @@ body{
 
 .container1{
     background: #304d5a;
-    width: 770px;
-    height: 450px;
     display: grid;
     grid-template-areas: 
     'about spec'

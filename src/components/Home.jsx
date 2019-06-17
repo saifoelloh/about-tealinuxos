@@ -6,7 +6,7 @@ import '../assets/css/custom.css'
 export default class Home extends Component {
     render() {
         return (
-    <div className="container1">
+    <div className="container1 text-white">
         {/* <!--Kanan--> */}
         <div className="about-TL">
             <div className="logo">
@@ -42,10 +42,16 @@ export default class Home extends Component {
             </div>
         </div>
         {/* <!--footer--> */}
-        <div className="footer">
-            <Link type="button" id="button" to="/credit">Credit</Link>
-            <button type="button" id="button1"><a href="#">Help</a></button>
-            <button type="button" id="button2"><a href="#">Report Bug</a></button>
+        <div className="footer w-100">
+            <div className="row w-100">
+                <div className="col-6 text-center">
+                    <Link className="btn btn-success" to="/credit">Credit</Link>
+                </div>
+                <div className="col-6 text-center">
+                    <a className="btn btn-success mx-2" >Help</a>
+                    <a className="btn btn-success mx-2" >Report Bug</a>
+                </div>
+            </div>
         </div>
     </div>
         )
