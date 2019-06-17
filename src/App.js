@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
+import Credit from './components/Credit';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/" component={Home} exact />
+        <Route path="/Credit" component={Credit}  />
       </Switch>
     </div>
   );

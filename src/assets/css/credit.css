@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    width: 770px;
+    height: 450px;;
+    color: #fff;
+}
+.container{
+    width: 770px;
+    height: 450px;
+    background: #233e44;
+    margin-left: 200px;
+    margin-right: -20px;
+}
+.pm{
+    padding: 20px 0 0 0;
+}
+.devList{
+    margin: auto;
+    margin-top: 30px;
+    width: 650px;
+    height: 250px;
+    border-radius: 5px;
+    background: #359e76;
+}
+#warperList{
+    height: 300px;;
+}
+#list-packaging-list{
+    height: 63px;
+    background: #4d6469;
+    color: #fff;
+    border-top-right-radius: 0px;
+}
+#list-software-research-list{
+    height: 63px;
+    background: #4d6469;
+    color: #fff;
+}
+#list-artwork-list{
+    height: 63px;
+    background: #4d6469;
+    color: #fff;
+}
+#list-documentation-list{
+    height: 64px;
+    background: #4d6469;
+    color: #fff;
+    border-bottom-right-radius: 0px;
+}
+.list-group-item.active{
+    border-color: #359e76;
+}
+ul>li{
+    list-style: none;
+    font-size: 110%;
+    margin-bottom: 5px;
+}
+ul>li>a,h5>a{
+    text-decoration: underline;
+    color: white;
+}
+#list-home{
+    margin: 30px 50px 0 0px;
+}
+#list-profile{
+    margin: 30px 50px 0 0px;
+}
+#list-messages{ 
+    margin: 30px 50px 0 0px;
+}
+#list-settings{
+    margin: 30px 50px 0 0px;
+}
