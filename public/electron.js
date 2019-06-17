@@ -13,9 +13,9 @@ function createWindow() {
       width: 800,
       height: 498,
       resizable:false,
+      fullscreen: false,
       title: 'About TeaLinuxOS'
     });
-  mainWindow.webContents.devToolsWebContents=true;
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
   mainWindow.on('closed', () => mainWindow = null);
 }
