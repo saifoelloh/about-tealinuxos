@@ -1,16 +1,16 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Credit from './components/Credit';
 
 
 function App() {
   return (
-    <div className="App">
-      <Switch>
+    <div className="App h-100">
+      <HashRouter>
         <Route path="/" component={Home} exact />
-        <Route path="/Credit" component={Credit}  />
-      </Switch>
+        <Route path="/Credit" component={Credit} />
+      </HashRouter>
     </div>
   );
 }
