@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 import LogoTea from '../assets/img/stevia gradient.png'
 import Axios from 'axios'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faHdd,
+    faHospitalSymbol,
+    faDesktop,
+    faMemory
+} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { os } from 'os'
 import '../assets/css/custom.css'
@@ -30,10 +37,10 @@ export default class Home extends Component {
                 <div className="spec d-flex flex-column align-items-center">
                     <span className="my-auto">
                         <h2><b>Hardware</b></h2>
-                        <p className="m-0">{this.state.hostname} </p>
-                        <p className="m-0">{this.state.cpu} </p>
-                        <p className="m-0">{this.state.ram} Gb </p>
-                        <p className="m-0">{this.state.storage} Gb Storage </p>
+                        <p className="text-left m-0"><FontAwesomeIcon icon={faHospitalSymbol} /> : {this.state.hostname} </p>
+                        <p className="text-left m-0"><FontAwesomeIcon icon={faDesktop} /> : {this.state.cpu} </p>
+                        <p className="text-left m-0"><FontAwesomeIcon icon={faMemory} /> : {this.state.ram} Gb </p>
+                        <p className="text-left m-0"><FontAwesomeIcon icon={faHdd} /> : {this.state.storage} Gb Storage </p>
                     </span>
                 </div>
                 {/* <!--footer--> */}
@@ -43,7 +50,9 @@ export default class Home extends Component {
                             <Link className="btn btn-success" to="/credit">Credit</Link>
                         </div>
                         <div className="col-6 text-center">
-                            <a className="btn btn-success mx-2" >Help</a>
+                            <a className="btn btn-success mx-2" onClick={()=>{
+                                window.open('https://tealinuxos.org/dokumentasi/')
+                            }} >Help</a>
                             <a className="btn btn-success mx-2" >Report Bug</a>
                         </div>
                     </div>
