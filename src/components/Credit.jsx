@@ -24,7 +24,6 @@ export default class Credit extends Component {
       daftar: this.state.listDeveloper[id]
     })
   }
-  
   render() {
     return (
       <div style={{ height: '100vh' }}>
@@ -34,7 +33,9 @@ export default class Credit extends Component {
             <span className="text-center text-white">
               <h4>Developer TeaLinuxOS</h4>
               <h5>Project Manager</h5>
-              <h6><a href="">Saipul</a></h6>
+              <h6 onClick={()=>{
+                window.open('https://github.com/saifoelloh')
+              }}>Moh. Saifoelloh Noor</h6>
             </span>
           </div>
           <div className="devList justify-content-center">
@@ -55,7 +56,6 @@ export default class Credit extends Component {
                         return (<ListGroupItem key={key}
                           className="text-dark"
                           onClick={()=>{
-                          console.log(datum)
                           window.open(datum.link)
                         }}>{datum.name}</ListGroupItem>);
                       })}
