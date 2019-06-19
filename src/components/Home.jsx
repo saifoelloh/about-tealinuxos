@@ -27,24 +27,14 @@ export default class Home extends Component {
                     </div>
                 </div>
                 {/* <!--Kiri--> */}
-                <div className="spec">
-                    <h2><b>Hardware</b></h2>
-                    <div className="list-spec">
-                        <table width="400px">
-                            <tr>
-                                <td>{this.state.hostname}</td>
-                            </tr>
-                            <tr>
-                                <td>{this.state.cpu}</td>
-                            </tr>
-                            <tr>
-                                <td>{this.state.ram} Gb RAM</td>
-                            </tr>
-                            <tr>
-                                <td>{this.state.storage} GB storage</td>
-                            </tr>
-                        </table>
-                    </div>
+                <div className="spec d-flex flex-column align-items-center">
+                    <span className="my-auto">
+                        <h2><b>Hardware</b></h2>
+                        <p className="m-0">{this.state.hostname} </p>
+                        <p className="m-0">{this.state.cpu} </p>
+                        <p className="m-0">{this.state.ram} Gb </p>
+                        <p className="m-0">{this.state.storage} Gb Storage </p>
+                    </span>
                 </div>
                 {/* <!--footer--> */}
                 <div className="footer w-100">
