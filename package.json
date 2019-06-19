@@ -2,9 +2,10 @@
   "name": "about-tealinuxos",
   "version": "0.1.0",
   "private": true,
-  "author": "Captain Electron",
+  "author": "Fajar Julianto, Moh Saifoelloh | saifoelloh@gmail.com",
   "homepage": "./",
   "main": "public/electron.js",
+  "icon": "logo_tealinuxos.svg",
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
@@ -55,6 +56,12 @@
     ],
     "directories": {
       "buildResources": "assets"
+    },
+    "linux": {
+      "icon": "tealinuxos"
+    },
+    "appImage": {
+      "systemIntegration": "doNotAsk"
     }
   }
 }

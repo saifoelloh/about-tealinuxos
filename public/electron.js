@@ -14,6 +14,8 @@ function createWindow() {
       height: 498,
       resizable:false,
       fullscreen: false,
+      fullscreenable: false,
+      icon: 'tealinuxos.png',
       title: 'About TeaLinuxOS'
     });
   mainWindow.setMenuBarVisibility(false);
